@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-mt-5">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-[#003366] to-[#0a192f] h-full font-mono">
+    <header class="bg-[#132d47] bg-opacity-90 h-16 md:h-20 flex items-center justify-between p-4 md:p-6 fixed top-0 left-0 right-0 z-50 shadow-lg">
+        <div class="flex w-full items-center justify-between">
+            <div class="text-[#64ffda] text-2xl md:text-3xl font-bold">
+                <a href="#" class="hover:text-blue-500 transition-colors duration-200">Esparcia, JW</a>
+            </div>
+
+            <nav id="nav-menu" class="hidden md:flex md:flex-row md:items-center text-white font-medium md:gap-x-4">
+                <a href="#home" class="relative inline-block py-2 px-4 rounded-md text-white  active:bg-[#001933] transition-colors duration-200 group">
+                    Home
+                    <span class="absolute left-0 bottom-0 block w-full h-1 bg-blue-500 transform scale-x-0 transition-transform duration-350 group-hover:scale-x-100"></span>
+                </a>
+                <a href="#about" class="relative inline-block py-2 px-4 rounded-md text-white  active:bg-[#001933] transition-colors duration-200 group">
+                    About Me
+                    <span class="absolute left-0 bottom-0 block w-full h-1 bg-blue-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                </a>
+                <a href="#projects" class="relative inline-block py-2 px-4 rounded-md text-white  active:bg-[#001933] transition-colors duration-200 group">
+                    Projects
+                    <span class="absolute left-0 bottom-0 block w-full h-1 bg-blue-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                </a>
+                <a href="#contact" class="relative inline-block py-2 px-4 rounded-md text-white  active:bg-[#001933] transition-colors duration-200 group">
+                    Contact
+                    <span class="absolute left-0 bottom-0 block w-full h-1 bg-blue-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                </a>
+                <a href="resume.pdf" download="resume"> 
+                    <button class="bg-cyan-500 text-yellow-50 py-2 px-4 rounded-lg hover:bg-cyan-600 active:bg-gray-900 transition-colors duration-150 ">
+                    Resume
+                </button>
+                </a>    
+            </nav>  
+
+            <button id="nav-toggle" class="md:hidden p-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 focus:outline-none transition-colors duration-150 z-50">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-nav-menu" class="fixed inset-0 bg-sky-900 bg-opacity-90 p-4 md:hidden transform translate-x-full transition-transform duration-300 z-40">
+        <nav class="flex flex-col items-center text-white font-medium mt-16">
+            <a href="#home" class="relative inline-block py-4 px-6 rounded-md text-slate-400 hover:bg-[#002244] active:bg-[#001933] transition-colors duration-200 group mb-4">
+                Home
+                <span class="absolute left-0 bottom-0 block w-full h-1 bg-gray-400 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+            </a>
+            <a href="#about" class="relative inline-block py-4 px-6 rounded-md text-white hover:bg-[#002244] active:bg-[#001933] transition-colors duration-200 group mb-4">
+                About Me
+                <span class="absolute left-0 bottom-0 block w-full h-1 bg-gray-400 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+            </a>
+            <a href="#projects" class="relative inline-block py-4 px-6 rounded-md text-white hover:bg-[#002244] active:bg-[#001933] transition-colors duration-200 group mb-4">
+                Projects
+                <span class="absolute left-0 bottom-0 block w-full h-1 bg-gray-400 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+            </a>
+            <a href="#contact" class="relative inline-block py-4 px-6 rounded-md text-white hover:bg-[#002244] active:bg-[#001933] transition-colors duration-200 group mb-4">
+                Contact
+                <span class="absolute left-0 bottom-0 block w-full h-1 bg-gray-400 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+            </a>
+            <button class="bg-cyan-500 text-yellow-50 py-2 px-4 rounded-lg hover:bg-cyan-600 active:bg-gray-900 transition-colors duration-150 mt-4">
+                Resume
+            </button>
+        </nav>
+    </div>
+
+    <main class="pt-16">
+        <!-- Home Section -->
+        <section id="home" class="flex flex-col items-center justify-center min-h-screen pt-20 mb-[-200px] mt-[-20px]">
+            <main class="text-white">
+                <section class="flex flex-col items-center w-4/5 md:w-2/4 mx-auto">
+                    <h3 class="text-3xl text-center mb-2">Hi, my name is</h3>
+                    <h1 class="text-4xl md:text-6xl font-semibold text-center mb-2 text-cyan-400">
+                        <span class="typewriter inline-block animate-typing overflow-hidden whitespace-nowrap border-r-2 border-cyan-400">
+                            <a href="https://www.facebook.com/jhunewally.esparcia" target="_blank" rel="noopener noreferrer">Jhune Wally Esparcia,</a>
+                        </span>
+                    </h1>
+                    <h2 class="text-3xl md:text-5xl text-center mb-4">Computer Science Student.</h2>
+                    <div class="text-center text-xl md:text-2xl">
+                        <p>A passionate and ambitious second-year college student with a strong drive to excel in web development. As I embark on my journey through my college years, I am excited to deepen my knowledge and skills in creating dynamic, user-friendly websites and applications.</p>
+                    </div>
+                </section>
+            </main>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="flex flex-col p-4 pt-24 text-white mt-[13%]">
+            <div class="w-full max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 text-2xl">
+                <div class="w-full md:w-3/4 mb-4 md:mb-0 pr-4">
+                    <h1 class="text-4xl md:text-6xl font-semibold text-cyan-400">About Me</h1>
+                    <p class="mt-4">Hello! I’m Jhune Wally Esparcia, a passionate second-year college student specializing in frontend web development. Currently, I’m honing my skills in HTML, CSS, Tailwind CSS, and JavaScript. My goal is to build dynamic, user-friendly websites and applications, focusing on responsive design and user experience. I’m excited about expanding my knowledge and contributing to meaningful web projects. Feel free to connect with me on GitHub or LinkedIn!</p>
+                    <p class="mt-4">Here are a few technologies I’ve been working with recently:</p>
+                    <ul class="grid grid-rows-2 grid-flow-col gap-x-3 mt-4 text-cyan-400">
+                        <li>&#9656; HTML</li>
+                        <li>&#9656; CSS</li>
+                        <li>&#9656; Tailwind</li>
+                        <li>&#9656; JavaScript</li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/3 flex justify-center md:justify-end mt-4 md:mt-0">
+                    <div class="w-64 h-64 md:w-auto md:h-auto">
+                        <img src="me.jpg" alt="My Photo" class="w-full h-full object-cover rounded-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 text-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-center mb-8 text-cyan-400">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold mb-2 text-cyan-400">Project 1</h3>
+                        <p class="text-base mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit earum, soluta rem voluptatum doloribus delectus atque aperiam itaque maiores quisquam labore laborum vitae culpa deleniti neque dolorem voluptatem, optio ratione.</p>
+                        <a href="#" class="bg-cyan-500 text-white py-2 px-4 rounded-lg hover:bg-cyan-600 transition-colors duration-150">Learn More</a>
+                    </div>
+                   
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold mb-2 text-cyan-400">Project 2</h3>
+                        <p class="text-base mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit earum, soluta rem voluptatum doloribus delectus atque aperiam itaque maiores quisquam labore laborum vitae culpa deleniti neque dolorem voluptatem, optio ratione.</p>
+                        <a href="#" class="bg-cyan-500 text-white py-2 px-4 rounded-lg hover:bg-cyan-600 transition-colors duration-150">Learn More</a>
+                    </div>
+                
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold mb-2 text-cyan-400">Project 3</h3>
+                        <p class="text-base mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit earum, soluta rem voluptatum doloribus delectus atque aperiam itaque maiores quisquam labore laborum vitae culpa deleniti neque dolorem voluptatem, optio ratione.</p>
+                        <a href="#" class="bg-cyan-500 text-white py-2 px-4 rounded-lg hover:bg-cyan-600 transition-colors duration-150">Learn More</a>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold mb-2 text-cyan-400">Project 1</h3>
+                        <p class="text-base mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit earum, soluta rem voluptatum doloribus delectus atque aperiam itaque maiores quisquam labore laborum vitae culpa deleniti neque dolorem voluptatem, optio ratione.</p>
+                        <a href="#" class="bg-cyan-500 text-white py-2 px-4 rounded-lg hover:bg-cyan-600 transition-colors duration-150">Learn More</a>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold mb-2 text-cyan-400">Project 1</h3>
+                        <p class="text-base mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit earum, soluta rem voluptatum doloribus delectus atque aperiam itaque maiores quisquam labore laborum vitae culpa deleniti neque dolorem voluptatem, optio ratione.</p>
+                        <a href="#" class="bg-cyan-500 text-white py-2 px-4 rounded-lg hover:bg-cyan-600 transition-colors duration-150">Learn More</a>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold mb-2 text-cyan-400">Project 1</h3>
+                        <p class="text-base mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit earum, soluta rem voluptatum doloribus delectus atque aperiam itaque maiores quisquam labore laborum vitae culpa deleniti neque dolorem voluptatem, optio ratione.</p>
+                        <a href="#" class="bg-cyan-500 text-white py-2 px-4 rounded-lg hover:bg-cyan-600 transition-colors duration-150">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-[#f0f0f0] shadow-md rounded-lg p-8 mx-auto my-16 max-w-4xl">
+            <h1 class="text-3xl font-bold mb-6 text-black">Contact Me</h1>
+            <div class="mb-8">
+                <p class="mb-4 text-cyan-900">If you have any questions or just want to get in touch, feel free to reach out!</p>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li><strong>Email:</strong> <a href="mailto:jwcesparcia@gmail.com" class="text-blue-600 hover:underline">jwcesparcia@gmail.com</a></li>
+                    <li><strong>Phone:</strong> (+63) 991-596-1021</li>
+                    <li><strong>Facebook:</strong> <a href="https://www.facebook.com/jhunewally.esparcia" target="_blank" class="text-blue-600 hover:underline">Jhune Wally Esparcia</a></li>
+                </ul>
+            </div>
+
+            <form action="submit_form.php" method="post" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-black">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-black">
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message:</label>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-black"></textarea>
+                </div>
+
+                <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded-md shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="text-center py-4 text-white bg-[#132d47]">
+        <p>&copy; 2024 Jhune Wally Esparcia. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
