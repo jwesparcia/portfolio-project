@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-mt-5">
+<html lang="en" class="scroll-smooth scroll-mt-5 overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +11,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <style>
-       
+        /* Add custom styles if necessary */
     </style>
 </head>
-<body class="bg-gradient-to-br from-[#0a192f] to-[#112240] min-h-screen text-gray-300">
+<body class="overflow-x-hidden bg-gradient-to-br from-[#0a192f] to-[#112240] min-h-screen text-gray-300">
     <header class="bg-[#0a192f] bg-opacity-90 h-20 flex items-center justify-between px-6 fixed top-0 left-0 right-0 z-50 shadow-lg">
         <div class="flex w-full items-center justify-between">
             <div class="text-[#64ffda] text-2xl font-bold">
                 <a href="#" class="hover:text-[#48bb78] transition-colors duration-300">JWESPARCIA</a>
             </div>
-
             <nav id="nav-menu" class="hidden md:flex md:items-center text-white font-medium space-x-6">
                 <a href="#home" class="hover:text-[#64ffda] transition-colors duration-300">Home</a>
                 <a href="#about" class="hover:text-[#64ffda] transition-colors duration-300">About</a>
@@ -30,7 +29,6 @@
                     Resume
                 </a>
             </nav>  
-
             <button id="nav-toggle" class="md:hidden p-2 rounded-full bg-[#112240] text-white hover:bg-[#1d3557] focus:outline-none transition-colors duration-300">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -51,14 +49,12 @@
         </nav>
     </div>
 
-    <main>
+    <main class="max-w-full mx-auto px-4">
         <!-- Home Section -->
         <section id="home" class="flex flex-col items-center justify-center min-h-screen px-4 py-20">
             <div class="text-center">
                 <h3 class="text-[#64ffda] text-xl mb-4 pt-20">Hi, my name is</h3>
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 gradient-text">
-                    Jhune Wally Esparcia
-                </h1>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 gradient-text">Jhune Wally Esparcia</h1>
                 <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 text-gray-400">I build things for the web.</h2>
                 <p class="max-w-2xl mx-auto text-lg text-gray-400 mb-8">
                     I'm a passionate second-year computer science student specializing in frontend web development. My goal is to create dynamic, user-friendly websites and applications that make a difference.
@@ -73,7 +69,6 @@
         <section id="about" class="py-20 px-4">
             <div class="max-w-6xl mx-auto">
                 <div class="flex flex-col md:flex-row items-center gap-12">
-                   
                     <div class="w-full md:w-2/3">
                         <h2 class="text-4xl font-bold text-center mb-8 gradient-text">About Me</h2>
                         <p class="text-lg mb-6">
@@ -110,8 +105,7 @@
                 <h2 class="text-4xl font-bold mb-12 text-center gradient-text">My Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-[#1d3557] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 transition-transform duration-300">
-                        <h3 class="text-2xl font-semibold mb-4 text-[#64ffda]">Contact Management System
-                        </h3>
+                        <h3 class="text-2xl font-semibold mb-4 text-[#64ffda]">Contact Management System</h3>
                         <p class="text-gray-300 mb-4">A console-based application that allows users to efficiently manage contact information. It supports full CRUD operations (Create, Read, Update, Delete), enabling users to add new contacts, view a list of saved contacts, update details, and delete contacts as needed. This project was designed to provide a simple and effective solution for personal or small business contact management without the complexity of a full-scale CRM.</p>
                         <a href="https://github.com/jwesparcia/ContactManagement/tree/main/FinalsProject" class="inline-block bg-[#64ffda] text-[#0a192f] py-2 px-4 rounded-md hover:bg-[#48bb78] transition-colors duration-300" target="_blank">View Project</a>
                     </div>
@@ -128,7 +122,6 @@
                         <a href="#" class="inline-block bg-[#64ffda] text-[#0a192f] py-2 px-4 rounded-md hover:bg-[#48bb78] transition-colors duration-300">View Project</a>
                     </div>
 
-                
                     <!-- Repeat this structure for other projects -->
                 </div>
             </div>
@@ -153,5 +146,14 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const mobileNavMenu = document.getElementById('mobile-nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            mobileNavMenu.classList.toggle('translate-x-full');
+        });
+    </script>
 </body>
 </html>
