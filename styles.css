@@ -1,3 +1,44 @@
+
+html, body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+#mobile-nav-menu {
+    overflow: hidden;
+    max-width: 100vw;
+}
+
+header {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+section {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.project-card {
+    max-width: 100%;
+}
+.project-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
 .nav-scrolled {
   transform: translateY(-100%);
   }
@@ -63,7 +104,7 @@
   }
 
   @keyframes gradient-shift {
-      0% {
+      0% {  
           background-position: 0% 50%;
       }
       50% {
