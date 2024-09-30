@@ -10,12 +10,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <style>
-        /* Add custom styles if necessary */
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="overflow-x-hidden bg-gradient-to-br from-[#0a192f] to-[#112240] min-h-screen text-gray-300">
-    <header class="bg-[#0a192f] bg-opacity-90 h-20 flex items-center justify-between px-6 fixed top-0 left-0 right-0 z-50 shadow-lg">
+    <header id="main-header" class="bg-[#0a192f] bg-opacity-90 h-20 flex items-center justify-between px-6 fixed top-0 left-0 right-0 z-50 shadow-lg">
         <div class="flex w-full items-center justify-between">
             <div class="text-[#64ffda] text-2xl font-bold">
                 <a href="#" class="hover:text-[#48bb78] transition-colors duration-300">JWESPARCIA</a>
@@ -144,16 +142,6 @@
     <footer class="bg-[#0a192f] text-center py-6 text-gray-400">
         <p>&copy; 2024 Jhune Wally Esparcia. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
-    <script>
-        // Mobile Navigation Toggle
-        const navToggle = document.getElementById('nav-toggle');
-        const mobileNavMenu = document.getElementById('mobile-nav-menu');
-
-        navToggle.addEventListener('click', () => {
-            mobileNavMenu.classList.toggle('translate-x-full');
-        });
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
