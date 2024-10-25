@@ -122,3 +122,5 @@
             mobileNavMenu.classList.add('translate-x-full');
         });
     }
+
+    

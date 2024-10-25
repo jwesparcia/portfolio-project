@@ -1,14 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 html, body {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    
 }
 
 * {
     box-sizing: border-box;
-}
 
+}
+:root {
+    scroll-padding-top: 5rem; /* Adjust this value if your header height changes */
+}
 main {
     max-width: 100vw;
     overflow-x: hidden;
